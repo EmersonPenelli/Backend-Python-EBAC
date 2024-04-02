@@ -50,7 +50,7 @@ PostgreSQL é um sistema de gerenciamento de banco de dados do tipo objeto-relac
 
 <br>
 
-<img src="./Modulo-01/assets/img-01.jpg">
+<img src="./assets/img-01.jpg">
 
 <br>
 
