@@ -2,7 +2,7 @@
 
 CREATE TABLE clientes(id SERIAL, nome_cliente TEXT);
 
-INSERT INTO clientes(nome_cliente) SELECT 'Bruno' FROM generate_series(1, 250000);
+INSERT INTO clientes(nome_cliente) SELECT 'Emerson' FROM generate_series(1, 250000);
 
 EXPLAIN ANALYZE SELECT * FROM clientes WHERE ID = 10;
 
