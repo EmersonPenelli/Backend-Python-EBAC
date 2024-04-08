@@ -12,7 +12,7 @@ Foi realizado a criação da entidade clientes, inserido dados e efetuado select
 
 CREATE TABLE clientes(id SERIAL, nome_cliente TEXT);
 
-INSERT INTO clientes(nome_cliente) SELECT 'Bruno' FROM generate_series(1, 250000);
+INSERT INTO clientes(nome_cliente) SELECT 'Emerson' FROM generate_series(1, 250000);
 
 EXPLAIN ANALYZE SELECT * FROM clientes WHERE ID = 10;
 ```
@@ -20,7 +20,7 @@ EXPLAIN ANALYZE SELECT * FROM clientes WHERE ID = 10;
 Resultado da primeira consulta:
 <img src="../img/consulta_antes.jpg">
 
-Tempo de Execução: 20.946ms
+Tempo de Execução: 20.564ms
 
 <br>
 
@@ -36,4 +36,4 @@ EXPLAIN ANALYZE SELECT * FROM clientes WHERE ID = 10;
 Resultado da segunda consulta:
 <img src="../img/consulta_depois.jpg">
 
-Tempo de Execução: 0.070ms
+Tempo de Execução: 0.054ms
